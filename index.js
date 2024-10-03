@@ -2,7 +2,7 @@
  *  自定义网站配置 
  */
 const config = {
-  title: "自定义导航",                 //write your website title
+  title: "8199导航",                 //write your website title
   subtitle: "Cloudflare Workers Dir", //write your website subtitle
   logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
   hitokoto: true,                     //use hitokoto or not
@@ -109,14 +109,9 @@ addEventListener('fetch', event => {
 /*通过分析链接 实时获取favicon
 * @url 需要分析的Url地址
 */
-function getFavicon(url){
-  if(url.match(/https{0,1}:\/\//)){
-    //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url.split('//')[1];
-    return "https://www.google.cn/s2/favicons?sz=64&domain_url=" + url;
-  }else{
-    //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url;
-    return "https://www.google.cn/s2/favicons?sz=64&domain_url=http://" + url;
-  } 
+function getFavicon(url) {
+  const domain = url.replace(/^https?:\/\//, '').split('/')[0];
+  return `https://icons.duckduck...​{domain}.ico`;
 }
 
 /** Render Functions

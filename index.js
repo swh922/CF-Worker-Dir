@@ -3,9 +3,9 @@
  */
 const config = {
   title: "8199导航",                 //write your website title
-  subtitle: "Cloudflare Workers Dir", //write your website subtitle
+  subtitle: "不如总在途中", //write your website subtitle
   logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
-  hitokoto: true,                     //use hitokoto or not
+  hitokoto: false,                     //use hitokoto or not
   search:true,                        //enable search function
   search_engine:[                     //choose search engine which you use
     {
@@ -25,7 +25,7 @@ const config = {
       template:"https://www.sogou.com/web?query=$s"
     }
   ],
-  selling_ads: true,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
+  selling_ads: false,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
   sell_info:{
     domain:"example.com",
     price:500,                        //domain price
@@ -33,7 +33,7 @@ const config = {
     contact:[                         //how to contact you
       {
         type:"envelope",               //contact type ("weixin","qq","telegram plane","envelope" or "phone")
-        content:"info@example.com"
+        content:"whs123@mail.com"
       }
     ]                        
   },
